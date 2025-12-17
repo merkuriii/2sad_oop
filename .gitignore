@@ -1,60 +1,35 @@
-
-# Сборка CMake
+# Build directories
 build/
-out/
-bin/
-lib/
-install/
-
-# Файлы CMake
-CMakeCache.txt
+cmake-build-*/
 CMakeFiles/
-cmake_install.cmake
-Makefile
 *.cmake
-!CMakeLists.txt
+Makefile
+CMakeCache.txt
+install_manifest.txt
+compile_commands.json
 
-# Сгенерированные файлы
-*.sln
-*.vcxproj*
-*.vcxproj.filters
-*.vcxproj.user
-x64/
-x86/
-Win32/
-Debug/
-Release/
-
-# Исполняемые файлы
-*.exe
-*.out
-*.app
-
-# Объектные файлы
-*.o
-*.obj
-
-# Библиотеки
-*.lib
-*.a
-*.dll
-*.so
-*.dylib
-
-# Логи и временные файлы
-*.log
-*.tmp
-
-# Резервные копии
-*~
-*.bak
-
-# IDE
+# IDE and editor files
 .vscode/
-.idea/
+.vs/
 *.swp
 *.swo
+*~
+.DS_Store
+.idea/
 
-# Документация
-docs/html/
-docs/latex/
+# Compiled files
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.exe
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# CTest files
+Testing/
+CTestTestfile.cmake

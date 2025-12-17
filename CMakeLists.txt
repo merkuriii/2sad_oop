@@ -20,9 +20,9 @@ FetchContent_MakeAvailable(googletest)
 add_library(${CMAKE_PROJECT_NAME}_lib src/money.cpp)
 target_include_directories(${CMAKE_PROJECT_NAME}_lib PUBLIC include)
 
-add_executable(${CMAKE_PROJECT_NAME}_exe main.cpp)
-target_link_libraries(${CMAKE_PROJECT_NAME}_exe PRIVATE ${CMAKE_PROJECT_NAME}_lib)
-target_include_directories(${CMAKE_PROJECT_NAME}_exe PRIVATE include)
+add_executable(${CMAKE_PROJECT_NAME} main.cpp)
+target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE ${CMAKE_PROJECT_NAME}_lib)
+target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE include)
 
 # Добавление тестов
 enable_testing()
